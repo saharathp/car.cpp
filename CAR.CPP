@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+#include<dos.h>
+void main()
+{
+int gd=DETECT,gm;
+initgraph(&gd,&gm,"c:\\tc\\bgi");
+setfillstyle(SOLID_FILL,GREEN);
+rectangle(100,100,300,200);
+floodfill(101,101,WHITE);
+setfillstyle(SOLID_FILL,YELLOW);
+rectangle(300,125,310,135);
+floodfill(301,126,WHITE);
+setfillstyle(SOLID_FILL,YELLOW);
+rectangle(300,175,310,185);
+floodfill(301,176,WHITE);
+setfillstyle(SOLID_FILL,RED);
+rectangle(150,50,200,100);
+floodfill(151,51,WHITE);
+setfillstyle(SOLID_FILL,BLUE);
+rectangle(200,50,250,100);
+floodfill(201,51,WHITE);
+setfillstyle(SOLID_FILL,BROWN);
+circle(150,220,20);
+floodfill(151,221,WHITE);
+setfillstyle(SOLID_FILL,BROWN);
+circle(250,220,20);
+floodfill(251,221,WHITE);
+getch();
+closegraph();
+}
